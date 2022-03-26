@@ -1,0 +1,14 @@
+package Lab03;
+
+import org.junit.Rule;
+import org.junit.Test;
+
+public class ErrorCollector {
+	@Rule
+	public ErrorCollector collector = new ErrorCollector();
+	@Test
+	public void example() {
+		collector.addError(new Throwable("There is an error in first line"));
+		collector.addError()
+	}
+}

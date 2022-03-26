@@ -1,0 +1,100 @@
+package ASM;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class KhoaHocTest {
+	KhoaHoc khoaHoc;
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
+
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@AfterEach
+	void tearDown() throws Exception {
+	}
+
+	@Test
+	void testKhoaHoc() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testKhoaHocStringStringIntDoubleStringInt() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetMaKH() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetMaKH() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetTenKH() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetTenKH() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetThoiLuong() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetThoiLuong() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetHocPhi() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetHocPhi() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetGhiChu() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetGhiChu() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetSoHV() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetSoHV() {
+		fail("Not yet implemented");
+	}
+
+}

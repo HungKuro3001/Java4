@@ -1,0 +1,55 @@
+package ASM;
+
+public class KhoaHoc {
+	private String maKH;
+	private String tenKH;
+	private double hocPhi;
+	private int soHV;
+	private String ghiChu;
+	
+	
+	
+	public KhoaHoc() {
+		
+	}
+	public KhoaHoc(String maKH, String tenKH, double hocPhi, int soHV, String ghiChu) {
+		super();
+		this.maKH = maKH;
+		this.tenKH = tenKH;
+		this.hocPhi = hocPhi;
+		this.soHV = soHV;
+		this.ghiChu = ghiChu;
+	}
+	public String getMaKH() {
+		return maKH;
+	}
+	public void setMaKH(String maKH) {
+		this.maKH = maKH;
+	}
+	public String getTenKH() {
+		return tenKH;
+	}
+	public void setTenKH(String tenKH) {
+		this.tenKH = tenKH;
+	}
+	public double getHocPhi() {
+		return hocPhi;
+	}
+	public void setHocPhi(double hocPhi) {
+		this.hocPhi = hocPhi;
+	}
+	public int getSoHV() {
+		return soHV;
+	}
+	public void setSoHV(int soHV) {
+		this.soHV = soHV;
+	}
+	public String getGhiChu() {
+		return ghiChu;
+	}
+	public void setGhiChu(String ghiChu) {
+		this.ghiChu = ghiChu;
+	}
+	
+	
+}

@@ -1,0 +1,26 @@
+package ASM;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+class KhoaHocTestNgoaiLe {
+
+	
+
+	@Before
+	void setUp() throws Exception {
+	}
+
+	@After
+	void tearDown() throws Exception {
+	}
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

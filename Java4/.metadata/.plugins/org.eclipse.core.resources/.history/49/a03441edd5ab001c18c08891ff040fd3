@@ -1,0 +1,112 @@
+package controllers.admin;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import beans.form_data.ResData;
+
+/**
+ * Servlet implementation class UserServlet
+ */
+@WebServlet({ "/admin/users/index", "/admin/users/create", "/users/store", "/admin/users/edit", "/admin/users/update",
+		"/admin/users/delete", "/admin/users/show", })
+public class UserServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public UserServlet() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String uri = request.getRequestURI();
+		if (uri.contains("index")) {
+			this.index(request, response);
+		} else if (uri.contains("create")) {
+			this.create(request, response);
+		} else if (uri.contains("edit")) {
+			this.edit(request, response);
+		} else if (uri.contains("show")) {
+			this.show(request, response);
+		} else if (uri.contains("delete")) {
+			this.delete(request, response);
+		} else {
+			// redirect 404
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String uri = request.getRequestURI();
+		if (uri.contains("store")) {
+			this.store(request, response);
+		} else if (uri.contains("update")) {
+			this.update(request, response);
+		} else {
+			// redirect 404
+		}
+	}
+
+	private void index(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		List<ResData> ds = new ArrayList<ResData>();
+		ResData obj1 = new ResData("A", "HN", "012", "hung@fpt.edu.vn", "123456", 0, 1),
+				obj2 = new ResData("A", "HN", "012", "hung@fpt.edu.vn", "123456", 0, 1),
+				obj3 = new ResData("A", "HN", "012", "hung@fpt.edu.vn", "123456", 1, 1);
+		ds.add(obj1);
+		ds.add(obj2);
+		ds.add(obj3);
+		request.setAttribute("ds", ds);
+		request.setAttribute("view", "/views/admin/user/index.jsp");
+		request.getRequestDispatcher("/views/layout.jsp").forward(request, response);
+	}
+
+	private void create(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		request.setAttribute("view", "/views/admin/user/create.jsp");
+		request.getRequestDispatcher("/views/layout.jsp").forward(request, response);
+	}
+
+	private void edit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+	private void show(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+	private void delete(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+	}
+
+	private void store(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+	}
+
+	private void update(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+	}
+}

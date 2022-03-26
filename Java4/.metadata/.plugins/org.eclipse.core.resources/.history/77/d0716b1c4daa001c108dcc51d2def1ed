@@ -1,0 +1,9 @@
+package utils;
+
+import javax.persistence.EntityManagerFactory;
+
+public class JpaUtil {
+	public static EntityManagerFactory getEMFactory() {
+		
+	}
+}

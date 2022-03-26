@@ -1,0 +1,120 @@
+package EduSys.entity;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.After;
+
+import org.junit.Before;
+import org.junit.Test;
+
+class KhoaHocTest {
+	KhoaHoc khoaHoc;
+
+	@Before
+	public void setUp() throws Exception {
+		khoaHoc = new KhoaHoc();
+	}
+
+	@After
+	void tearDown() throws Exception {
+		khoaHoc = null;
+	}
+
+	@Test
+	void testIsIdList() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetIdList() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetMaKH() {
+		int expected= 1;
+		int result = khoaHoc.getMaKH();
+		assertEquals(expected,expected);
+	}
+
+	@Test
+	void testSetMaKH() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetMaCD() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetMaCD() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetHocPhi() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetHocPhi() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetThoiLuong() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetThoiLuong() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetNgayKG() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetNgayKG() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetGhiChu() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetGhiChu() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetMaNV() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetMaNV() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetNgayTao() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetNgayTao() {
+		fail("Not yet implemented");
+	}
+
+}

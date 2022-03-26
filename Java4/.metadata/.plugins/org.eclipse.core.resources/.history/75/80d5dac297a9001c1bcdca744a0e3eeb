@@ -1,0 +1,36 @@
+package EduSys.entity;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class KhoaHocTestNgoaiLe {
+
+	KhoaHoc khoaHoc;
+
+	@Before
+	public void setUp() throws Exception {
+		khoaHoc = new KhoaHoc();
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		khoaHoc = null;
+	}
+
+	@Test
+	public void testMaKH(){
+		try{
+			khoaHoc.setMaKH(-1);
+			fail("MaKH khong duoc âm");
+		}
+		catch(IllegalArgumentException e){
+			assertEquals("MaKH khong duoc âm", e.getMessage());
+		}
+
+	}
+	
+
+}

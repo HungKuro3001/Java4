@@ -1,0 +1,9 @@
+package ASM;
+
+public class KhoaHoc {
+	private String maKH;
+	private String tenKH;
+	private double hocPhi;
+	private int soHV;
+	private String ghiChu;
+}

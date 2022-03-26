@@ -1,0 +1,10 @@
+package EduSys.entity;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+
+{KhoaHocTest.class}
+)
+public class TestSuite{ // nothing
+}
+

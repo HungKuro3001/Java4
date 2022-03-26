@@ -1,0 +1,10 @@
+package ASM.all;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+
+{EduSys.Helper.TestSuite.class}
+)
+public class TestSuiteAll{ // nothing
+}
+

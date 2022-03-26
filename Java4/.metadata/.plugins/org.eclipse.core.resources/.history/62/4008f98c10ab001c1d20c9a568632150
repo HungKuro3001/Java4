@@ -1,0 +1,11 @@
+package ASM;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.*;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+
+{ KhoaHocTest.class,KhoaHocTestngoaile.class,KhoaHocTestBien.class })
+public class TestSuite { 
+}

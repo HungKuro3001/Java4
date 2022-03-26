@@ -1,0 +1,24 @@
+package ASM;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.After;
+import org.juniti.Before;
+import org.junit.Test;
+
+public class KhoaHocTestBien {
+	KhoaHoc khoaHoc;
+	
+
+	@Before
+	public void setUp() throws Exception {
+		khoaHoc = new KhoaHoc();
+	}
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	
+
+}

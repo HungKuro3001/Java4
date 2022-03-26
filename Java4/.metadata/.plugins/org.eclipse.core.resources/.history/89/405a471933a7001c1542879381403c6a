@@ -1,0 +1,7 @@
+package Lab03;
+
+public class TestRunner {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,11 @@
+package EduSys.entity;
+
+import org.junit.runner.RunWith;
+import org.junit.runner.*
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+
+{ KhoaHocTest.class })
+public class TestSuite { // nothing
+}

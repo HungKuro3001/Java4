@@ -1,0 +1,15 @@
+package utils;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class JpaUtil {
+	public static EntityManagerFactory getEMFactory() {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("JavaServlet");
+		return factory;
+	}
+	public static EntityManager getEntityManager() {
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("JavaServlet");
+		return factory;
+	}
+}

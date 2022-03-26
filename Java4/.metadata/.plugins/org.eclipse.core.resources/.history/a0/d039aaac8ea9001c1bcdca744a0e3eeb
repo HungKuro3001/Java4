@@ -1,0 +1,138 @@
+package EduSys.entity;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.junit.After;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class KhoaHocTest {
+	KhoaHoc khoaHoc;
+
+	@Before
+	public void setUp() throws Exception {
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+		 Date dateNow = sf.parse("2022-17-04");
+		 String dateNgayTao = sf.format(ngayTao);
+		khoaHoc = new KhoaHoc(1, "CD001", 100000, 100, "2022-17-04", "Hello", "NV001", "2022-17-04",true);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		khoaHoc = null;
+	}
+
+	@Test
+	public void testIsIdList() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSetIdList() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetMaKH() {
+		int expected= 1;
+		int result = khoaHoc.getMaKH();
+		assertEquals(expected,expected);
+	}
+
+	@Test
+	public void testSetMaKH() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetMaCD() {
+		String expected = "CD001";
+		String result = khoaHoc.getMaCD();
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void testSetMaCD() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetHocPhi() {
+		float expected = 100000;
+		float result = khoaHoc.getHocPhi();
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void testSetHocPhi() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetThoiLuong() {
+		int expected = 100;
+		int result = khoaHoc.getThoiLuong();
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void testSetThoiLuong() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetNgayKG() {
+		String expected = "2022-17-04";
+		Date result = khoaHoc.getNgayKG();
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void testSetNgayKG() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetGhiChu() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSetGhiChu() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetMaNV() {
+		String expected = "NV001";
+		String result = khoaHoc.getMaNV();
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void testSetMaNV() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetNgayTao() {
+		String expected = "2022-17-04";
+		Date result = khoaHoc.getNgayTao();
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void testSetNgayTao() {
+		fail("Not yet implemented");
+	}
+
+}

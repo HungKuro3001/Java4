@@ -1,0 +1,12 @@
+package DAO;
+
+import javax.persistence.EntityManager;
+
+import utils.JpaUtil;
+
+public class UserDAO {
+    private EntityManager em;
+    public UserDAO() {
+        em = JpaUtil.getEntityManager();
+    }
+}

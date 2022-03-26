@@ -1,0 +1,11 @@
+package Lab04;
+
+import org.testng.annotations.Test;
+
+public class VatCaCulatorTest {
+
+  @Test
+  public void static getVatTest() {
+	  assertEquals(VatCaCulator.getVat(15000000), 150000);
+  }
+}
